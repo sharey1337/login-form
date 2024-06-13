@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /
+
+# CSS, JS, ve diğer statik dosyaları yeniden yazma kurallarından hariç tut
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule \.(css|js|png|jpg|jpeg|gif|ico)$ - [L]
+
+# "/login/" URL'sini "/sessions/login.php" olarak yeniden yaz
+RewriteRule ^login/?$ sessions/login.php [L]
+
+# "/register/" URL'sini "/sessions/register.php" olarak yeniden yaz
+RewriteRule ^register/?$ sessions/register.php [L]
+
+# "/register/" URL'sini "/sessions/register.php" olarak yeniden yaz
+RewriteRule ^anasayfa/?$ admin/anasayfa.php [L]
