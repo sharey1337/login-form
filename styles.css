@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #202632;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.redirect-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #2a2d3e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.redirect-box {
+    width: 100%;
+    padding: 20px;
+}
+
+.redirect-box h2 {
+    margin-bottom: 20px;
+}
+
+.redirect-box p {
+    font-size: 16px;
+}
